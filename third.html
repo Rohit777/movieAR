@@ -28,6 +28,20 @@
       });
     </script>
     <style>
+        @font-face{
+            font-family: raleway;
+            src: url(fonts/Raleway-Regular.ttf) format("truetype");
+        }
+
+        @font-face{
+            font-family: ralewaybold;
+            src: url(fonts/Raleway-Bold.ttf) format("truetype");
+        }
+
+        body{
+            font-family: raleway;
+            margin: 0px;
+        }
       .d-none{
             display:none !important;
         }
@@ -73,7 +87,7 @@
     <main>
       <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
-          <video id="minnion" src="./videos/Minions The Rise of Gru  cut.mp4" preload="auto" loop="true" playsinline webkit-playsinline ></video>
+          <video id="minnion" src="./videos/Minions The Rise of Gru  cut.mp4" preload="auto" muted loop="true" playsinline webkit-playsinline ></video>
           <!-- <img id="playbtn" src="img/play.png"> -->
         </a-assets>
   
@@ -88,7 +102,7 @@
     <div class="play-backdrop">
       <div class="play-content">
           <p style="color:black; margin: 1em auto;">
-             Allow Camera. <br/><br/>Scan Doctor Strange movie poster to enjoy immersive experience.
+             Allow Camera. <br/><br/>Scan Minnion movie poster to enjoy immersive experience.
           </p>
           <button class="play-button">Start Experience</button>
       </div>
